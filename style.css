@@ -8,11 +8,11 @@
 html {
     scroll-behavior: smooth;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #1a202c;
+    color: #1e293b;
     background-color: #ffffff;
 }
 
-/* Elegant Dark Navigation */
+/* Elegant Executive Navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@ html {
     width: 100%;
     top: 0;
     background: #ffffff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
     z-index: 1000;
 }
 
@@ -44,7 +44,7 @@ html {
 
 .nav-links a {
     text-decoration: none;
-    color: #475569;
+    color: #64748b;
     font-size: 0.9rem;
     font-weight: 500;
     transition: color 0.2s ease;
@@ -54,7 +54,7 @@ html {
     color: #0284c7;
 }
 
-/* Premium Hero Design */
+/* High-End Hero Design */
 .hero {
     height: 90vh;
     display: flex;
@@ -65,7 +65,7 @@ html {
 }
 
 .hero-content h1 {
-    font-size: 3.8rem;
+    font-size: 3.6rem;
     font-weight: 800;
     line-height: 1.15;
     margin-bottom: 1.5rem;
@@ -77,7 +77,7 @@ html {
     font-size: 1.25rem;
     color: #475569;
     margin-bottom: 2.5rem;
-    max-width: 650px;
+    max-width: 700px;
     line-height: 1.6;
 }
 
@@ -110,13 +110,13 @@ html {
     background-color: #f1f5f9;
 }
 
-/* Modernized Grid System */
+/* Layout Management */
 .services-section, .pricing-section, .contact-section {
     padding: 8rem 10%;
 }
 
 h2 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     text-align: center;
     margin-bottom: 4rem;
     color: #0f172a;
@@ -139,7 +139,7 @@ h2 {
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04);
 }
 
 .icon-box {
@@ -155,11 +155,11 @@ h2 {
 
 .card p {
     color: #475569;
-    line-height: 1.6;
+    line-height: 1.65;
     font-size: 0.95rem;
 }
 
-/* Corporate Pricing Tables */
+/* Enterprise Solution Layouts */
 .pricing-section {
     background-color: #f8fafc;
 }
@@ -186,7 +186,7 @@ h2 {
 
 .price-card.featured {
     border: 2px solid #0284c7;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.04);
 }
 
 .badge {
@@ -209,7 +209,7 @@ h2 {
 }
 
 .price {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 800;
     color: #0f172a;
     margin-bottom: 1rem;
@@ -235,7 +235,6 @@ h2 {
     padding-left: 1.5rem;
 }
 
-/* Bullet markers */
 .price-card ul li::before {
     content: "✓";
     position: absolute;
@@ -249,7 +248,7 @@ h2 {
     text-align: center;
 }
 
-/* Strategic Application Intake Form */
+/* Discovery Form Layout */
 .contact-section {
     text-align: center;
 }
@@ -288,7 +287,7 @@ h2 {
     box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
 }
 
-/* Simple Compact Footer */
+/* Footer */
 footer {
     padding: 3rem 10%;
     text-align: center;
@@ -297,12 +296,12 @@ footer {
     border-top: 1px solid #e2e8f0;
 }
 
-/* Responsive UI Overrides */
+/* Mobile Adjustments */
 @media (max-width: 768px) {
     .navbar { padding: 1.2rem 5%; }
     .hero { padding: 0 5%; }
-    .hero-content h1 { font-size: 2.6rem; }
+    .hero-content h1 { font-size: 2.4rem; }
     .services-section, .pricing-section, .contact-section { padding: 5rem 5%; }
-    .nav-links { display: none; } /* Kept clean for single-page basic setups */
+    .nav-links { display: none; }
     .pricing-grid { gap: 2rem; }
 }
