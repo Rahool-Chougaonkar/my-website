@@ -1,4 +1,4 @@
-/* Reset & Base Styling */
+/* Reset & Foundations */
 * {
     margin: 0;
     padding: 0;
@@ -8,27 +8,29 @@
 html {
     scroll-behavior: smooth;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #111111;
+    color: #1a202c;
     background-color: #ffffff;
 }
 
-/* Navigation */
+/* Elegant Dark Navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 10%;
+    padding: 1.5rem 10%;
     position: fixed;
     width: 100%;
     top: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     z-index: 1000;
 }
 
 .logo {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    color: #0f172a;
 }
 
 .nav-links {
@@ -37,125 +39,230 @@ html {
 }
 
 .nav-links li {
-    margin-left: 2.5rem;
+    margin-left: 2rem;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #555555;
+    color: #475569;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #111111;
+    color: #0284c7;
 }
 
-/* Hero Section */
+/* Premium Hero Design */
 .hero {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
-    background-color: #fafafa;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1.2;
+    font-size: 3.8rem;
+    font-weight: 800;
+    line-height: 1.15;
     margin-bottom: 1.5rem;
+    color: #0f172a;
     letter-spacing: -1px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    color: #666666;
-    margin-bottom: 2rem;
-    max-width: 600px;
+    font-size: 1.25rem;
+    color: #475569;
+    margin-bottom: 2.5rem;
+    max-width: 650px;
+    line-height: 1.6;
 }
 
-/* Buttons */
+/* Action Buttons */
 .btn {
     display: inline-block;
-    padding: 0.8rem 2rem;
-    background-color: #111111;
+    padding: 0.9rem 2.2rem;
+    background-color: #0f172a;
     color: #ffffff;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    border: none;
+    border: 1px solid #0f172a;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .btn:hover {
-    background-color: #444444;
+    background-color: #1e293b;
+    transform: translateY(-1px);
 }
 
-/* Projects Showcase */
-.projects-section {
+.btn-outline {
+    background-color: transparent;
+    color: #0f172a;
+}
+
+.btn-outline:hover {
+    background-color: #f1f5f9;
+}
+
+/* Modernized Grid System */
+.services-section, .pricing-section, .contact-section {
     padding: 8rem 10%;
 }
 
-.projects-section h2 {
-    font-size: 2rem;
-    margin-bottom: 3rem;
+h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #0f172a;
     letter-spacing: -0.5px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 3rem;
 }
 
 .card {
+    padding: 2.5rem;
     background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
 }
 
-.card-image {
-    height: 250px;
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.icon-box {
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    border-radius: 4px;
 }
-
-/* Greyscale Placeholder Backgrounds */
-.placeholder-1 { background-color: #e5e5e5; }
-.placeholder-2 { background-color: #ededed; }
-.placeholder-3 { background-color: #f2f2f2; }
 
 .card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #0f172a;
 }
 
 .card p {
-    color: #666666;
+    color: #475569;
     line-height: 1.6;
     font-size: 0.95rem;
 }
 
-/* Contact Section */
-.contact-section {
-    padding: 8rem 10%;
-    background-color: #fafafa;
-    text-align: center;
+/* Corporate Pricing Tables */
+.pricing-section {
+    background-color: #f8fafc;
 }
 
-.contact-section h2 {
-    font-size: 2rem;
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.price-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 3rem 2.5rem;
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    position: relative;
+}
+
+.price-card.featured {
+    border: 2px solid #0284c7;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0284c7;
+    color: #ffffff;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.price-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0f172a;
     margin-bottom: 1rem;
 }
 
+.price-desc {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.price-card ul {
+    list-style: none;
+    margin-bottom: 2.5rem;
+}
+
+.price-card ul li {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #475569;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+/* Bullet markers */
+.price-card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #0284c7;
+    font-weight: bold;
+}
+
+.price-card .btn {
+    width: 100%;
+    text-align: center;
+}
+
+/* Strategic Application Intake Form */
+.contact-section {
+    text-align: center;
+}
+
 .contact-section p {
-    color: #666666;
+    color: #475569;
     margin-bottom: 3rem;
+    margin-top: -3rem;
+    font-size: 1.1rem;
 }
 
 .contact-form {
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -165,34 +272,37 @@ html {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 1rem;
-    border: 1px solid #dddddd;
+    padding: 1.1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
     background-color: #ffffff;
     font-family: inherit;
     font-size: 0.95rem;
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #111111;
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
 }
 
-/* Footer */
+/* Simple Compact Footer */
 footer {
     padding: 3rem 10%;
     text-align: center;
-    font-size: 0.85rem;
-    color: #999999;
-    border-top: 1px solid #eeeeee;
+    font-size: 0.9rem;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
 }
 
-/* Mobile Responsive Optimization */
+/* Responsive UI Overrides */
 @media (max-width: 768px) {
-    .navbar { padding: 1.5rem 5%; }
+    .navbar { padding: 1.2rem 5%; }
     .hero { padding: 0 5%; }
-    .hero-content h1 { font-size: 2.5rem; }
-    .projects-section, .contact-section { padding: 5rem 5%; }
-    .nav-links li { margin-left: 1.5rem; }
+    .hero-content h1 { font-size: 2.6rem; }
+    .services-section, .pricing-section, .contact-section { padding: 5rem 5%; }
+    .nav-links { display: none; } /* Kept clean for single-page basic setups */
+    .pricing-grid { gap: 2rem; }
 }
