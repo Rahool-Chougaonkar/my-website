@@ -1,0 +1,198 @@
+/* Reset & Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #111111;
+    background-color: #ffffff;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #111111;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-color: #fafafa;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #666666;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #111111;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #444444;
+}
+
+/* Projects Showcase */
+.projects-section {
+    padding: 8rem 10%;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    letter-spacing: -0.5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.card {
+    background: #ffffff;
+}
+
+.card-image {
+    height: 250px;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
+
+/* Greyscale Placeholder Backgrounds */
+.placeholder-1 { background-color: #e5e5e5; }
+.placeholder-2 { background-color: #ededed; }
+.placeholder-3 { background-color: #f2f2f2; }
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #666666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 8rem 10%;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    color: #666666;
+    margin-bottom: 3rem;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #111111;
+}
+
+/* Footer */
+footer {
+    padding: 3rem 10%;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #999999;
+    border-top: 1px solid #eeeeee;
+}
+
+/* Mobile Responsive Optimization */
+@media (max-width: 768px) {
+    .navbar { padding: 1.5rem 5%; }
+    .hero { padding: 0 5%; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .projects-section, .contact-section { padding: 5rem 5%; }
+    .nav-links li { margin-left: 1.5rem; }
+}
